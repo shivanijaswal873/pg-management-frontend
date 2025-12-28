@@ -1,0 +1,113 @@
+
+.login-wrapper {
+  background-color: #f5f7fc;
+}
+
+.login-left {
+  background-color: #1f3fb4;
+}
+
+.left-content {
+  max-width: 420px;
+}
+
+.image-card {
+  padding: 26px;
+  border-radius: 30px;
+}
+
+.image-card img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* RIGHT PANEL */
+.login-right {
+  flex-direction: column;
+  align-items: flex-start;   /* 🔑 shift card left */
+  padding-left: 80px;        /* 🔑 first image spacing */
+}
+
+/* LOGIN CARD – FIRST IMAGE SIZE */
+.login-card {
+  width: 360px;              /* 🔑 smaller */
+  background-color: #ffffff;
+  padding: 26px;
+  border-radius: 18px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* LOGO – FIRST IMAGE POSITION */
+.logo {
+  width: 44px;
+  height: 44px;
+  background-color: #ff7a00;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.brand {
+  font-weight: 600;
+  font-size: 15px;
+  color: #111827;
+}
+
+/* INPUTS – FIRST IMAGE */
+.custom-input {
+  background-color: #f2f4fb !important;
+  border: none !important;
+  border-radius: 14px !important;
+  height: 42px;
+  padding: 0 14px;
+  font-size: 14px;
+}
+
+.custom-input::placeholder {
+  color: #9ca3af;
+}
+
+.custom-input:focus {
+  box-shadow: none !important;
+}
+
+/* LOGIN BUTTON – FIRST IMAGE */
+.login-btn {
+  background-color: #ff7a00 !important;
+  border: none !important;
+  height: 42px;
+  border-radius: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.login-btn:hover {
+  background-color: #e86e00 !important;
+}
+
+/* FOOTER */
+.footer-text {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #7a7a7a;
+}
+
+/* MOBILE */
+@media (max-width: 992px) {
+  .login-right {
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .login-card {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .footer-text {
+    display: none;
+  }
+}
