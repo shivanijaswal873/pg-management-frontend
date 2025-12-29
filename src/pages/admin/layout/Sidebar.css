@@ -1,0 +1,107 @@
+:root{
+  --sidebar:#0B2447;
+  --sidebar-light:#102C66;
+  --text:#C9D5FF;
+  --white:#fff;
+}
+
+/* MAIN SIDEBAR */
+.sidebar{
+  width:250px;
+  height:100vh;
+  background:var(--sidebar);
+  position:fixed;
+  top:0;
+  left:0;
+  display:flex;
+  flex-direction:column;
+  padding:18px 14px;
+}
+
+/* LOGO AREA */
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:#fff;
+  font-size:18px;
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+.logo-box{
+  background:#15336E;
+  padding:8px;
+  border-radius:12px;
+}
+
+/* MENU LIST */
+.menu{
+  list-style:none;
+  padding:0;
+  margin-top:8px;
+}
+
+/* MENU ITEM */
+.menu-item{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  color:var(--text);
+  text-decoration:none;
+  font-size:14px;
+  padding:12px 14px;
+  border-radius:12px;
+  margin-bottom:6px;
+}
+
+.menu-item i{
+  font-size:17px;
+}
+
+/* HOVER */
+.menu-item:hover{
+  background:#112E63;
+  color:#fff;
+}
+
+/* ACTIVE STATE — SAME AS SCREENSHOT */
+.menu-item.active{
+  background:#0F2E67;
+  color:#fff;
+}
+
+/* BOTTOM PROFILE SECTION */
+.profile{
+  margin-top:auto;
+  background:#091B3A;
+  padding:14px;
+  border-radius:14px;
+  display:flex;
+  gap:10px;
+  align-items:center;
+  color:#fff;
+}
+
+.avatar{
+  width:38px;
+  height:38px;
+  border-radius:10px;
+  background:#FF8C00;
+  color:#fff;
+  display:grid;
+  place-items:center;
+  font-weight:700;
+}
+
+.profile p{
+  font-size:12px;
+  opacity:.8;
+}.main-content{
+  margin-left:250px;
+  margin-top:70px;
+  padding:25px;
+  background:#F5F7FE;
+  min-height:100vh;
+}
+
