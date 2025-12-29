@@ -1,0 +1,118 @@
+.app-container {
+  display: flex;
+}
+
+/* -------------- SIDEBAR -------------- */
+
+.sidebar {
+  width: 240px;
+  background: #052247;
+  color: white;
+  min-height: 100vh;
+  padding: 15px 10px;
+  transition: width .25s;
+}
+
+.app-container.collapsed .sidebar {
+  width: 80px;
+}
+
+.brand {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.menu-link {
+  display: flex;
+  gap: 12px;
+  padding: 12px 15px;
+  color: #bcd0ff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.menu-link:hover,
+.menu-link.active {
+  background: rgba(255,255,255,.12);
+  color: white;
+}
+
+.bi {
+  font-size: 18px;
+}
+
+/* user card */
+.user-card {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  gap: 10px;
+  color: white;
+  align-items: center;
+}
+
+.avatar-sm {
+  background: #ff9f43;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+/* -------------- HEADER -------------- */
+
+.header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  background: white;
+  justify-content: space-between;
+}
+
+.hamburger-btn {
+  background: none;
+  border: none;
+  font-size: 26px;
+}
+
+.search-box {
+  width: 55%;
+  border-radius: 25px;
+  border: 1px solid #e2e6f3;
+  padding: 10px 15px;
+  background: #f3f6ff;
+}
+
+.profile-area {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.avatar {
+  background: #1c4ed8;
+  color: white;
+  padding: 10px 13px;
+  border-radius: 50%;
+}
+
+/* ----------- MAIN CONTENT ----------- */
+
+.main-wrapper {
+  flex: 1;
+  background: #f6f8ff;
+}
+
+.content-area {
+  padding: 25px;
+}
