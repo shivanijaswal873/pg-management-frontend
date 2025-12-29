@@ -5,16 +5,27 @@ import AuthProvider from "@/auth/AuthContext";
 import Layout from "@/components/layout/Layout";
 import UnderProgress from "@/pages/admin/UnderProgress";
 import NotFound from "./pages/Notfound";
+import PublicRoute from "./auth/PublicRoute";
+import ProtectedRoute from "./auth/ProtectedRoute";
 
 export default function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/admin" element={<Layout />}>
-            <Route path="dashboard" element={<Dashboard />} />
-            <Route path="*" element={<UnderProgress />} />
+          <Route
+            path="/login"
+            element={
+              <PublicRoute>
+                <Login />
+              </PublicRoute>
+            }
+          />
+          <Route element={<ProtectedRoute />}>
+            <Route path="/admin" element={<Layout />}>
+              <Route path="dashboard" element={<Dashboard />} />
+              <Route path="*" element={<UnderProgress />} />
+            </Route>
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

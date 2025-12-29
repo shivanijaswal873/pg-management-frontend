@@ -56,6 +56,10 @@
   right: 12px;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 /* AVATAR */
 .avatar-sm {
   width: 36px;
