@@ -1,146 +1,17 @@
-.login-container {
-  display: flex;
-  height: 100vh;
-  width: 100%;
-}
-
-.left-pane {
-  width: 50%;
-  background: #0b3fad;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.left-content {
-  text-align: center;
-  width: 420px;
-}
-
-.illustration {
-  width: 430px;
-  height: 330px;
-  object-fit: contain;
-  border-radius: 25px;
-}
-
-.title {
-  color: white;
-  font-weight: 700;
-  margin-top: 25px;
-}
-
-.subtitle {
-  color: rgba(255,255,255,0.7);
-  font-size: 14px;
-}
-
-.right-pane {
-  width: 50%;
-  background: #f6f8ff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .login-card {
-  width: 430px;
-  background: white;
-  padding: 25px 30px;
+  width: 100%;
+  max-width: 420px;
   border-radius: 18px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.login-image {
+  max-width: 430px;
+  max-height: 330px;
+  object-fit: contain;
 }
 
 .logo {
   width: 45px;
   height: 45px;
-  border-radius: 50%;
-  background: #fff4d8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
   font-size: 20px;
-}
-
-.brand {
-  text-align: center;
-  font-weight: 600;
-}
-
-.welcome {
-  text-align: center;
-  font-weight: 700;
-}
-
-.hint {
-  text-align: center;
-  font-size: 13px;
-  color: gray;
-}
-
-label {
-  margin-top: 10px;
-  font-size: 13px;
-  font-weight: 600;
-}
-
-.input {
-  width: 100%;
-  border-radius: 12px;
-  border: 1px solid #dcdcdc;
-  padding: 8px 10px;
-}
-
-/* SMALL TEXT LINE */
-.row-line {
-  display: flex;
-  justify-content: space-between;
-  font-size: 13px;
-  margin-top: 8px;
-}
-
-.login-btn {
-  width: 100%;
-  background: #ff7a00;
-  border: none;
-  color: white;
-  padding: 9px;
-  font-weight: 600;
-  border-radius: 12px;
-  margin-top: 15px;
-}
-
-.signup {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 13px;
-}
-
-.footer {
-  text-align: center;
-  color: gray;
-  font-size: 12px;
-}
-@media (max-width: 992px) {
-
-  .login-container {
-    flex-direction: column;
-  }
-
-  .left-pane {
-    display: none;
-  }
-
-  .right-pane {
-    width: 100%;
-    background: #ffffff;
-  }
-
-  .login-card {
-    width: 92%;
-    max-width: 420px;
-    margin: auto;
-    box-shadow: none;
-  }
 }
