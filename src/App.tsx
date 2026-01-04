@@ -7,6 +7,7 @@ import UnderProgress from "@/pages/admin/UnderProgress";
 import NotFound from "./pages/Notfound";
 import PublicRoute from "./auth/PublicRoute";
 import ProtectedRoute from "./auth/ProtectedRoute";
+import Leads from "./pages/admin/leads/Leads";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
           <Route element={<ProtectedRoute />}>
             <Route path="/admin" element={<Layout />}>
               <Route path="dashboard" element={<Dashboard />} />
+              <Route path="leads" element={<Leads />} />
               <Route path="*" element={<UnderProgress />} />
             </Route>
           </Route>
